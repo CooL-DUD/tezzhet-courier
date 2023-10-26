@@ -1,0 +1,44 @@
+.select {
+  background: $accentColor;
+  padding: 12px 14px;
+  border-radius: 10px;
+  position: relative;
+
+  &__value {
+    color: $secondaryColor;
+    display: flex;
+    justify-content: space-between;
+    span {
+      color: inherit;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 100%;
+    background: $secondaryColor;
+    box-shadow: 0px 2px 3px rgba(147, 157, 185, 0.35);
+    border-radius: 10px;
+    max-height: 130px;
+    overflow: scroll;
+    height: 0;
+    transition: all .3s ease;
+    &-item {
+      padding: 12px 14px;
+      &.active {
+        display: none;
+      }
+    }
+
+    &.active {
+      height: auto;
+    }
+  }
+  &__icon {
+    path {
+      stroke: $secondaryColor;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -p 3001",
+    "generate": "nuxt generate -p 3001",
+    "preview": "nuxt preview -p 3001",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "^8.0.0-rc.4",
+    "@samk-dev/nuxt-vcalendar": "^1.0.0",
+    "@types/node": "^18",
+    "nuxt": "^3.5.2"
+  },
+  "dependencies": {
+    "@emanuele-em/nuxt-swipe": "^1.0.2",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.4.0",
+    "sass": "^1.63.4",
+    "vue-the-mask": "^0.11.1"
+  }
+}

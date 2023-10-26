@@ -1,0 +1,97 @@
+.shifts {
+  &-list {
+  }
+
+  &-item {
+    margin-top: 18px;
+    padding-bottom: 23px;
+    &__title {
+      font-weight: 600;
+    }
+
+    &__info {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      &-date {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        white-space: nowrap;
+      }
+
+      &-address {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        background: rgba(118, 118, 128, 0.12);
+        border-radius: 8px;
+        padding: 7px;
+        width: 100%;
+      }
+
+      &-btns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+
+        .btn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 2px 17px;
+          &-accent {
+            padding: 12px;
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          &-break {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 17px;
+            :last-child {
+              font-size: 10px;
+              line-height: 138%;
+              text-align: center;
+            }
+            span {
+              white-space: nowrap;
+              color: $secondaryColor;
+            }
+            &.btn-deny {
+              :first-child {
+                font-size: 12px;
+                line-height: 100%;
+                text-align: center;
+              }
+              span {
+                color: unset;
+              }
+            }
+          }
+          span {
+            white-space: nowrap;
+          }
+          :last-child {
+            font-size: 10px;
+            line-height: 138%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &__period {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+  }
+}

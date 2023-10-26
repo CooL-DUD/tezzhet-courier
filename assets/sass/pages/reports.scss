@@ -1,0 +1,250 @@
+.reports {
+  &-total {
+    padding: 0;
+    padding-top: 20px;
+    &__income {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 114%;
+      text-align: center;
+      color: $primaryColor;
+    }
+
+    &__period {
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    &__info {
+      margin: 0 5px;
+      margin-top: 20px;
+      background: rgba(118, 118, 128, 0.12);
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      &-item {
+        padding: 6px 9px;
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &:nth-child(2) {
+          //border-left: 1px solid $borderColor;
+          //border-right: 1px solid $borderColor;
+          padding-left: 0;
+          padding-right: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &:after, &:before {
+            content: '';
+            width: 0.65px;
+            height: 16px;
+            background: rgba(60, 60, 67, 0.36);
+            border-radius: 0.5px;
+          }
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      padding: 10px 18px;
+      &:not(& ~ &) {
+        border-bottom: 1px solid $borderColor;
+        margin-top: 20px;
+      }
+      &-title {
+      }
+
+      &-value {
+        margin: 0;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &-list {
+    margin-top: 12px;
+    background: #F4F4F4;
+    border-radius: 10px;
+    overflow: scroll;
+    //position: fixed;
+    //left: 18px;
+    //right: 18px;
+    height: 51vh;
+    &__container {
+    }
+  }
+
+  &-item {
+    &__title {
+      margin-right: auto;
+    }
+  }
+}
+
+.reports {
+  &-block {
+    &__title {
+      margin-bottom: 18px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    &__item {
+      margin-bottom: 12px;
+      :not(:first-child) {
+        margin-top: 9px;
+      }
+      &:not(:last-child) {
+        border-bottom: 0.8px solid $borderColor;
+        padding-bottom: 10px;
+      }
+      &-payment-method {
+      }
+
+      &-title {
+      }
+
+      &-text {
+      }
+
+      &-payment-info {
+      }
+
+      &-total {
+      }
+
+      &-status {
+      }
+
+      &-info {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__btns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 22px;
+      margin-bottom: 25px;
+    }
+
+    &__controls {
+      margin-top: 15px;
+      &-top {
+        display: flex;
+        justify-content: space-around;
+      }
+      &-bottom {
+        width: 100%;
+        margin-top: 20px;
+        .btn-accent {
+          width: 100%;
+        }
+      }
+      &-item {
+        p {
+          font-size: 13px;
+          line-height: 123%;
+          text-align: center;
+        }
+      }
+    }
+
+    &__drag {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      background: #EFEFF0;
+      background: rgba(91, 92, 106, 0.50);
+      backdrop-filter: blur(5px);
+      border-radius: 50px;
+      padding: 5px;
+      width: 100%;
+      min-height: 50px;
+      pointer-events: none;
+
+      span {
+        font-size: 18px;
+        line-height: 122%;
+        color: $secondaryColor;
+      }
+      &.loading {
+        justify-content: center;
+        .spinner {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &.active {
+        pointer-events: all;
+        background: $accentColor;
+      }
+      &.accepted {
+        pointer-events: all;
+        background: #097969;
+        backdrop-filter: blur(5px);
+        white-space: nowrap;
+        .drag-svg {
+          path {
+            stroke: #097969;
+          }
+        }
+      }
+    }
+
+    &__date {
+    }
+
+    &__name {
+    }
+
+    &__address {
+    }
+
+    &__restaurant {
+    }
+
+    &__order {
+    }
+
+    &__delivery {
+    }
+  }
+}
+.drag-svg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: all 0.7s ease;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #646464;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+.invisible-btn {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,49 @@
+svg,
+path {
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 10px;
+  background: rgba(249, 249, 249, 0.5);
+  backdrop-filter: blur(7.5px);
+  z-index: 10;
+  border-top: 0.5px solid #7b83a1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  &-one {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    color: #7b83a1;
+    &__active {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 12px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 7px;
+      color: #8f64eb;
+      svg,
+      path {
+        stroke: #8f64eb;
+        fill: #8f64eb;
+      }
+    }
+  }
+}

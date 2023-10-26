@@ -1,0 +1,14 @@
+.links-item {
+  padding: 13px 27px 13px 20px;
+  border-bottom: 1px solid $borderColor;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #22242F;
+}
+
+.chevron-right {
+  transform: rotate(-90deg);
+  margin-left: 10px;
+}

@@ -1,0 +1,38 @@
+//fonts
+//Nunito
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+//Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+//SF Pro Display
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('@/assets/fonts/SF-Pro/SF-Pro-Display-Medium.woff')  format('truetype');
+}
+//SF Pro Text
+@font-face {
+  font-family: 'SF-Pro-Text';
+  src: url('@/assets/fonts/SF-Pro/SF-Pro-Text-Medium.woff')  format('truetype');
+}
+@font-face {
+  font-family: 'SF-Pro-Text-Semibold';
+  src: url('@/assets/fonts/SF-Pro/SF-Pro-Text-Semibold.woff')  format('truetype');
+}
+//helpers
+@import 'helpers/reset.scss';
+@import 'helpers/variables.scss';
+@import 'common.scss';
+//layouts
+@import 'layouts/footer.scss';
+//pages
+@import 'pages/profile.scss';
+@import 'pages/login.scss';
+@import 'pages/about.scss';
+@import 'pages/reports.scss';
+@import 'pages/shifts.scss';
+@import 'pages/orders.scss';
+@import 'pages/language.scss';
+@import 'pages/support.scss';
+@import 'pages/chat.scss';
+//components
+@import 'components/link-item.scss';
+@import 'components/select.scss';

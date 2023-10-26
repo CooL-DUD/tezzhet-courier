@@ -1,0 +1,13 @@
+.orders {
+  &-list {
+    max-height: 85vh;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: scroll;
+    padding: 1px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

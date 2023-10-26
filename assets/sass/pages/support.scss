@@ -1,0 +1,20 @@
+.support {
+  &__recipient {
+    background: #F4F4F4;
+    border-radius: 10px;
+    color: #8B8D90;
+    padding: 10px 14px;
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
+
+  .input {
+    margin-top: 48px;
+  }
+
+  .btn-accent {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
